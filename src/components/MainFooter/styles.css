@@ -1,0 +1,14 @@
+footer.MainFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #07AAE2;
+}
+
+footer.MainFooter span:first-child {
+  margin-left: 30px;
+}
+
+footer.MainFooter span:last-child {
+  margin-right: 30px;
+}

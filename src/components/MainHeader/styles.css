@@ -1,0 +1,84 @@
+header.MainHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.logo {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+img.logo-c {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+img.logo-colabora {
+  width: 95px;
+  height: 19px;
+}
+
+div.profile-dropdown {
+  margin-top: 5px;
+  margin-right: 50px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+div#profile-dropdown-menu {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  flex-direction: column;
+  border: 2px solid #07AAE2;
+  border-radius: 10px;
+  background-color: white;
+}
+
+div#profile-dropdown-menu a {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #07AAE2;
+  color: #07AAE2;
+}
+
+div#profile-dropdown-menu a:hover {
+  background-color: #066384;
+  color: white;
+}
+
+div#profile-dropdown-menu a:first-child {
+  border-radius: 8px 8px 0px 0px;
+}
+
+div#profile-dropdown-menu a:last-child {
+  border-radius: 0px 0px 8px 8px;
+  border-bottom: none;
+}
+
+button.profile-button {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 2px solid #07AAE2;
+  border-radius: 10px;
+  background-color: white;
+  color: #07AAE2;
+  outline: none;
+}
+
+img.profile-image {
+  object-fit: cover;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+}

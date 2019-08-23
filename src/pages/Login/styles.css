@@ -1,0 +1,41 @@
+div.Login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.login-box {
+  width: 360px;
+  height: 400px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+div.login-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img.c-logo {
+  width: 63px;
+  height: 66px;
+  margin-bottom: 5px;
+}
+
+img.colabora-logo {
+  width: 100px;
+  height: 20px;
+}
+
+a.login-button {
+  color: white;
+  background-color: #01FE82;
+  padding: 10px 30px;
+  border-radius: 10px;
+}

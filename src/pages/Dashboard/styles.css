@@ -1,0 +1,27 @@
+div.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #07AAE2;
+  width: 220px;
+  height: 200px;
+  border-radius: 10px;
+  color: white;
+}
+
+div.card span:first-child {
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+}
+
+div.card span:first-child i {
+  font-size: 40px;
+  margin-left: 5px;
+}
+
+
+div.card span:last-child {
+  font-size: 12px;
+}

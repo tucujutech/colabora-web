@@ -61,7 +61,7 @@ class MainHeader extends Component {
   render() {
     return (
       <header className="MainHeader">
-        <a href="#" className="logo">
+        <Link to="/dashboard" className="logo">
           <img
             src={C}
             className="logo-c"
@@ -72,7 +72,7 @@ class MainHeader extends Component {
             className="logo-colabora"
             alt=""
           />
-        </a>
+        </Link>
         <div class="profile-dropdown" ref={this.profileMenuNode}>
           <button
             className="profile-button"

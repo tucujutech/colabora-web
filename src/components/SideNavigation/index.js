@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 class SideNavigation extends Component {
@@ -28,10 +29,10 @@ class SideNavigation extends Component {
       return (
         <ul id="treeview-menu">
           <li>
-            <a href="#">
+            <Link to="/colaboradores">
               <i className="fas fa-file-alt"></i>
               <span>Lista</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#">

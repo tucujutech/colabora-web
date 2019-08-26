@@ -5,6 +5,7 @@ import './styles.css';
 import MainHeader from '../../components/MainHeader';
 import MainFooter from '../../components/MainFooter';
 import Dashboard from '../../pages/Dashboard';
+import Colaboradores from '../../pages/Colaboradores';
 
 class MainContent extends Component {
   render() {
@@ -16,6 +17,7 @@ class MainContent extends Component {
           <div className="main-content">
             <Switch>
               <Route exact path="/dashboard" component={Dashboard} />
+              <Route exact path="/colaboradores" component={Colaboradores} />
             </Switch>
           </div>
         </main>

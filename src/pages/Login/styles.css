@@ -31,11 +31,31 @@ img.c-logo {
 img.colabora-logo {
   width: 100px;
   height: 20px;
+  margin-bottom: 40px;
+}
+
+input.login-input {
+  width: 90%;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #07AAE2;
+  padding: 15px 20px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 15px;
+  outline: none;
+}
+
+input.login-input::placeholder {
+  color: #07AAE2;
+  opacity: .6;
 }
 
 a.login-button {
+  margin-top: 15px;
   color: white;
   background-color: #01FE82;
   padding: 10px 30px;
   border-radius: 10px;
+  font-size: 18px;
 }

@@ -5,11 +5,13 @@ ul.SideNavigation {
   transition: height 5s;
 }
 
-ul.SideNavigation li a:hover {
+ul.SideNavigation li a:hover,
+ul.SideNavigation li button:hover {
   background-color: #066384 !important;
 }
 
-ul.SideNavigation li > a {
+ul.SideNavigation li > a,
+ul.SideNavigation li > button {
   color: white;
   width: 100%;
   height: 45px;
@@ -18,14 +20,26 @@ ul.SideNavigation li > a {
   padding-left: 20px;
 }
 
-ul.SideNavigation li > a > i {
+ul.SideNavigation li > button {
+  background-color: #07AAE2;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Fira Code Medium';
+  cursor: pointer;
+}
+
+ul.SideNavigation li > a > i,
+ul.SideNavigation li > button > i {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
 
-ul.SideNavigation li > a span {
+ul.SideNavigation li > a span,
+ul.SideNavigation li > button span {
   width: 160px;
+  text-align: left;
 }
 
 ul#treeview-menu {

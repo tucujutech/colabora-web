@@ -50,18 +50,21 @@ class SideNavigation extends Component {
     return (
       <ul className="SideNavigation">
         <li>
-          <a href="#" id="colaboradores-menu" onClick={this.colaboradoresMenuToggle}>
+          <button
+            type="button"
+            id="colaboradores-menu"
+            onClick={this.colaboradoresMenuToggle}
+          >
             <i className="fas fa-users"></i>
             <span>Colaboradores</span>
             <i className="fas fa-angle-down"></i>
-          </a>
+          </button>
           {this.colaboradoresMenu()}
         </li>
         <li>
           <a href="#">
             <i className="fas fa-clock"></i>
             <span>Horas Extras</span>
-            {/* <i className="fas fa-angle-down"></i> */}
           </a>
         </li>
       </ul>

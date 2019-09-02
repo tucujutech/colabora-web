@@ -1,91 +1,93 @@
 div.Colaboradores {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
-  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+div.colaborador-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 520px;
+  min-width: 500px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+div.colaborador-card:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+div.colaborador-card:nth-last-child(2) {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 1200px) {
+  div.colaborador-card {
+    width: 100%;
+  }
+
+  div.colaborador-card:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+div.colaborador-card:nth-last-child(2) {
+  margin-bottom: 30px;
+}
+}
+
+div.colab-card-content {
+  padding: 20px;
+  display: flex;
   align-items: center;
 }
 
-div.page-header {
-  border: 2px solid #07AAE2;
-  color: #07AAE2;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+div.colab-card-content span {
+  font-weight: bold;
 }
 
-div.page-header:hover {
-  background-color: #19F98C;
-  color: white;
-  border: 2px solid #19F98C;
+div.colab-card-content img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
-div.table-bordered {
+div.colab-card-footer {
   width: 100%;
-  border: 2px solid #07aae2;
-  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-table {
-  width: 100%;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-table, tr, th, td {
-  border: 1px solid #07aae2;
-  border-collapse: collapse;
-}
-
-th {
-  color: #07aae2;
-  padding: 5px;
-}
-
-tbody tr:hover {
-  background-color: #EFEFEF;
-}
-
-tbody tr td:last-child button {
-  padding: 5px;
-  font-size: 16px;
-  margin-right: 5px;
-  border-radius: 5px;
-  border: none;
-  color: white;
+div.colab-card-footer button {
+  flex-grow: 1;
+  padding: 10px 0px;
   cursor: pointer;
   outline: none;
+  border: none;
+  color: white;
+  font-size: 14px;
 }
 
-tbody tr td:last-child button:hover {
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+div.colab-card-footer button:hover {
+  text-decoration: #1F1F1F;
 }
 
-tbody tr td:last-child button:nth-child(1){
-  background-color: #03ACE3;
+div.colab-card-footer button > i {
+  padding-right: 10px;
 }
 
-tbody tr td:last-child button:nth-child(2){
+div.colab-card-footer button:nth-child(1){
+  background-color: #07AAE2;
+}
+
+div.colab-card-footer button:nth-child(2){
   background-color: #1F1F1F;
 }
 
-tbody tr td:last-child button:nth-child(3){
+div.colab-card-footer button:nth-child(3){
   background-color: #EA4D4D;
-}
-
-tbody tr td:last-child button:last-child {
-  margin-right: 0px;
-}
-
-tbody tr td:last-child button i {
-  width: 20px;
-}
-
-td {
-  text-align: center;
-  padding: 10px;
 }
